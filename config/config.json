@@ -7,17 +7,24 @@
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "burrito_bucket_with_sequelize",
-    "host": "127.0.0.1",
+    "username": "nq56y14nay72qptu",
+    "password": "edx8mezfqjvbh9lz",
+    "database": "pf3mhieby9rkki6h",
+    "host": "mgs0iaapcj3p9srz.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "burrito_bucket_with_sequelize",
-    "host": "127.0.0.1",
+    "username": "nq56y14nay72qptu",
+    "password": "edx8mezfqjvbh9lz",
+    "database": "pf3mhieby9rkki6h",
+    "host": "mgs0iaapcj3p9srz.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
+
+
+    // "username": "root",
+    // "password": null,
+    // "database": "burrito_bucket_with_sequelize",
+    // "host": "127.0.0.1",
+    // "dialect": "mysql"
