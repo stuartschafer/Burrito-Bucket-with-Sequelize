@@ -1,0 +1,91 @@
+body {
+    background-image: url("/assets/img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: yellow;
+}
+
+.dream_section, .new_dreams {
+    border: 3px solid #cccccc;
+    background-color: grey;
+    opacity: 0.8;
+    color: purple;
+    margin-top: 20px;
+}
+
+.timeRange {
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-left: -40px;
+}
+
+#longer, #bucketList {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-top: 10px;
+    border-top: 3px solid #cccccc;
+}
+
+.titleOfRange {
+    margin: 5px;
+    color: purple;
+    text-align: center;
+}
+
+#in_progress { 
+    color: lime;
+}
+
+#didit {
+    color: red;
+}
+
+#youcandoit {
+    color: aqua;
+    font-size: 50px;
+}
+
+#welcome_title {
+    font-size: 75px;
+}
+
+.welcome {
+    border-bottom: 3px solid #cccccc;
+}
+
+.new_goal {
+    color: purple;
+}
+
+#bb {
+    width: 600px;
+}
+
+#notice {
+    color: purple;
+    text-align: center;
+}
+
+#img1 { 
+	position: absolute;
+    left: 55px;
+    top: 100px;
+}
+
+#img2 { 
+	position: absolute;
+	right: 55px;
+    top: 100px;
+}
+
+#img3 { 
+	position: absolute;
+	left: 10px;
+    top: 20px;
+}
+
+#img4 { 
+	position: absolute;
+	left: 70px;
+    opacity: 0.5;
+}
