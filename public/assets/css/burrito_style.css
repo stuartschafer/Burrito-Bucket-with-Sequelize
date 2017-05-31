@@ -11,6 +11,7 @@ body {
     background-color: grey;
     opacity: 0.8;
     color: purple;
+    font-size: 17px;
     margin-top: 20px;
 }
 
@@ -18,6 +19,7 @@ body {
     padding-bottom: 5px;
     padding-left: 5px;
     margin-left: -40px;
+    font-size: 17px;
 }
 
 #longer, #bucketList {

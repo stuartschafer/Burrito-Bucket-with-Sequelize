@@ -56,14 +56,18 @@
             
                 {{!--This section is seperated for only short-term goals--}}
                 <div class="timeRange">
-                    <h3 class="titleOfRange">Short Term</h3>
+                    <h3 class="titleOfRange"><strong>Short Term</strong></h3>
                     {{#each burrito}}
                         {{#unless complete}} 
                             {{#if short}}
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                <br>
                                 <form action="/{{this.id}}?_method=PUT" method="POST">
                                     <input type="hidden" name="complete" value="true">
-                                    <button id="didit" type="submit">DID IT!</button>
+                                    <button id="didit" type="submit">I Did it!</button>
                                     {{id}}. {{goal}}
+                                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                        *Begun on {{createdAt}}
                                 </form>
                             {{/if}}
                         {{/unless}}
@@ -72,14 +76,18 @@
 
                 {{!--This section is seperated for only long-term goals--}}
                 <div class="timeRange">
-                    <h3 class="titleOfRange" id="longer">Long Term</h3>
+                    <h3 class="titleOfRange" id="longer"><strong>Long Term</strong></h3>
                     {{#each burrito}}
                         {{#unless complete}}    
                             {{#if longer}}
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                <br>
                                 <form action="/{{this.id}}?_method=PUT" method="POST">
                                     <input type="hidden" name="complete" value="true">
-                                    <button id="didit" type="submit">DID IT!</button>
+                                    <button id="didit" type="submit">I Did it!</button>
                                     {{id}}. {{goal}}
+                                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                        *Begun on {{createdAt}}
                                 </form>
                             {{/if}}
                         {{/unless}}
@@ -88,14 +96,18 @@
 
                 {{!--This section is seperated for only bucket list items--}}
                 <div class="timeRange">
-                    <h3 class="titleOfRange" id="bucketList">Bucket List</h3>
+                    <h3 class="titleOfRange" id="bucketList"><strong>Bucket List</strong></h3>
                     {{#each burrito}}
                         {{#unless complete}}   
                             {{#if bucket}}
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                <br>
                                 <form action="/{{this.id}}?_method=PUT" method="POST">
                                     <input type="hidden" name="complete" value="true">
-                                    <button id="didit" type="submit">DID IT!</button>
+                                    <button id="didit" type="submit">I Did it!</button>
                                     {{id}}. {{goal}}
+                                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                        *Begun on {{createdAt}}
                                 </form>
                             {{/if}}
                         {{/unless}}
@@ -111,21 +123,19 @@
         <h3>Look at what you've accomplished!</h3>
         <h4><u>(Yeah! Way to go!)</u></h4>
         <ul class="text-left" id="in_progress">
-          
             {{#each burrito}}
             {{#if complete}}
-            <h4>
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                <br>
                 <form action="/{{this.id}}?_method=DELETE" method="POST">
                     Goal: {{goal}} 
                     <input type="hidden" name="delete" value="true">
-                    <p>You completed this {{timeittook}}</p>
-                    <p>Completed on {{createdAt}}
-                        <button id="deleteit" type="submit">~~Delete~~</button>
-                    </p>
-                    <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                    <br>
+                    You completed this {{timeittook}}
+                    <button id="deleteit" type="submit">~~Permanently Delete~~</button>
+                    <br>
+                    Completed on {{updatedAt}}
                 </form>
-            </h4>
-                
             {{/if}}
             {{/each}}
         </ul>

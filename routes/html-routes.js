@@ -19,7 +19,8 @@ module.exports = function(app) {
                 newObj.longer = data[i].longer;
                 newObj.bucket = data[i].bucket;
                 newObj.complete = data[i].complete;
-                newObj.createdAt = moment(data[i].updatedAt).format('MMMM Do YYYY, h:mm a');
+                newObj.createdAt = moment(data[i].createdAt).format('MMMM Do YYYY, h:mm a');
+                newObj.updatedAt = moment(data[i].updatedAt).format('MMMM Do YYYY, h:mm a');
                 newObj.timeittook = moment(data[i].updatedAt).from(moment(data[i].createdAt));
                 newArray.push(newObj);
             }
