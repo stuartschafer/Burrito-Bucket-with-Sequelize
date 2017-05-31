@@ -115,11 +115,17 @@
             {{#each burrito}}
             {{#if complete}}
             <h4>
-                {{goal}} - {{createdAt}}
-
-                
-            </h4>
+                <form action="/{{this.id}}?_method=DELETE" method="POST">
+                    Goal: {{goal}} 
+                    <input type="hidden" name="delete" value="true">
+                    <p>You completed this {{timeittook}}</p>
+                    <p>Completed on {{createdAt}}
+                        <button id="deleteit" type="submit">~~Delete~~</button>
+                    </p>
+                    <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
                 </form>
+            </h4>
+                
             {{/if}}
             {{/each}}
         </ul>

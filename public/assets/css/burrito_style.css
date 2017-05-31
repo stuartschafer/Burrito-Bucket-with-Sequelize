@@ -3,6 +3,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     color: yellow;
+    font-family: 'Russo One', sans-serif;
 }
 
 .dream_section, .new_dreams {
@@ -55,6 +56,11 @@ body {
 
 .new_goal {
     color: purple;
+}
+
+#deleteit {
+    color: red;
+    font-size: 13px;
 }
 
 #bb {
