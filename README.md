@@ -10,7 +10,7 @@ Once you have accomplished something, you can mark it as done by clicking "Did I
 
 Everything is stored in a database, so no matter when/where you are, you can always check in on your progress, add new items, or mark items as complete.
 
-To see it in action, please visit it at https://burrito-bucket.herokuapp.com/
+To see it in action, please visit it at https://burrito-bucket-with-sequelize.herokuapp.com/
 
 ![](public/assets/img/demo.gif)
 
