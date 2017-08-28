@@ -6,7 +6,7 @@ Burrito Bucket will help keep track of all of them.
 
 You can add new dreams/goals to your bucket, and select a timeframe for each.
 
-Once you have accomplished something, you can mark it as done by clicking "Did It" next to it.
+Once you have accomplished something, you can mark it as completed by clicking "Did It" next to it.
 
 Everything is stored in a database, so no matter when/where you are, you can always check in on your progress, add new items, or mark items as complete.
 
